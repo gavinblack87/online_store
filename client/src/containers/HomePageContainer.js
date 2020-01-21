@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../components/home/Header';
+import NavBar from '../components/navigation/NavBar';
+import Search from '../components/search/Search';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class HomePageContainer extends Component {
@@ -27,6 +29,8 @@ componentDidMount() {
             <Router>
                 <React.Fragment>
                     <Header />
+                    <NavBar />
+                    <Search shoes={this.state.shoes}/>
                 </React.Fragment>
             </Router>
         )
