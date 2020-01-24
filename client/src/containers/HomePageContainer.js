@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import Mens from './MensShoesContainer';
-import Header from '../components/home/Header';
+import Shoe from './ShoeContainer'
 import NavBar from '../components/navigation/NavBar';
 import Search from '../components/search/Search';
-import Shoes from '../components/shoes/Shoes';
-import Banners from '../components/banners/banners.js'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import RollingImage from '../components/Carousel/Carousel';
 import shoes from '../data/data.json'
-import StickyFooter from '../components/navigation/Footer';
+
 
 class HomePageContainer extends Component {
     constructor(props){
@@ -38,14 +36,11 @@ class HomePageContainer extends Component {
                     
                     <NavBar />
                     <Route exact path="/mens" component={Mens}/>
-                    <Route exact path="/womens" component={Mens}/>
+                    <Route exact path="/mens/nike" component={Shoe}/>
                     <Route exact path="/kids" component={Mens}/>
                     <Route exact path="/"/>
                     
                     <RollingImage/>
-                    
-                    
-                    <StickyFooter />
                 </React.Fragment>
             </Router>
         )

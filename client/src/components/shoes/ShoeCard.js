@@ -2,11 +2,12 @@ import React from 'react'
 import { Card, Badge, Button } from 'react-bootstrap';
 import nike from '../../images/adidas.jpg'
 import '../../styles/shoeCard.css'
+import Shoe from '../../containers/ShoeContainer'
 
 
 const ShoeCard = (props) => {
     return(
-        <a href="/mens">
+        <a href="/mens/nike" component={Shoe}>
         <Card className="h-100 shadow-sm bg-white rounded">
             <Card.Img variant="top" src={nike} />
             <div className="carddiv" >

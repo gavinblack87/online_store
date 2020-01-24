@@ -1,0 +1,69 @@
+.shoeContainer {
+   padding: 25px;
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+}
+
+li {
+    padding: 0px 5px 5px 5px;
+}
+.main {
+    height: 310px;
+   
+}
+
+.thumbs {
+    height: 100px;
+}
+
+.sizes {
+    background-color: goldenrod;
+}
+
+.shoeInfo {
+    padding-left: 15px;
+}
+
+.select {
+    padding-top: 30%;
+    font-size: smaller;
+}
+
+.sizes:hover {
+    border-color: black;
+}
+
+.button_cont {
+    padding-top: 54%;
+
+}
+
+.sizeguide {
+    color: black;
+    margin-left: 6%;
+    font-size: x-small;
+    text-decoration: underline;
+}
+
+.sizeguide:hover {
+    color: goldenrod;
+}
+
+.example_c {
+    color: goldenrod;
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 2px solid goldenrod;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    }
+
+    .example_c:hover {
+        color: #ffffff;
+        background: goldenrod;
+        text-decoration: none;
+        border-color: goldenrod;
+        transition: all 0.2s ease 0s;
+        opacity: 90%;
+        }

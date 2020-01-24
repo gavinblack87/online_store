@@ -1,12 +1,9 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, FormControl,Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Navbar, Nav, NavDropdown, FormControl, Form } from 'react-bootstrap';
 import '../../styles/navBarStyles.css';
 import Logo from '../../images/gs_logo.jpg';
 
 const NavBar = (props) => {
-
-    
 
 return (
 <Navbar sticky="top">
@@ -45,12 +42,13 @@ return (
       </Form>
     </Nav>
 
-    
+    <Nav>
     <NavDropdown title="FAQ" id="returns-nav-dropdown" alignRight>
         <NavDropdown.Item>Returns</NavDropdown.Item>
         <NavDropdown.Item>Delivery Info</NavDropdown.Item>
         <NavDropdown.Item>Size guide</NavDropdown.Item>
     </NavDropdown>
+    </Nav>
     
     
     </Navbar.Collapse>
