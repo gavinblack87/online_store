@@ -32,24 +32,10 @@ class Search extends Component {
               </div>
             </div>
       
-              <div className="table-container">
-                <table align="center">
-                  <tbody>
-                    <tr>
-                      <th className="left-align">Make</th>
-                      <th className="left-align">Model</th>
-                      <th>Price</th>
-                      <th>Gender</th>
-                      <th>Description</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                    </tr>
+              <div className="results">
                       {filteredShoes.map((shoe, index) => {
                         return<ShoeListItem shoe={shoe} key={index}/>
                       })}
-                  </tbody>
-                </table>
               </div>
             </>
           )

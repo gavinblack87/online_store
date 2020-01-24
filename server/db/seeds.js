@@ -1,12 +1,14 @@
 
+var nike = require('../images/nike.jpeg');
 use golden_shoe;
 db.dropDatabase();
+
 
 db.shoes.insertMany([
     {
         make: "Nike",
         model: "Air",
-        image: "",
+        image: '../images/nike.jpeg',
         stockLevel: "10",
         gender: "Mens",
         price: 10.99,
@@ -18,7 +20,7 @@ db.shoes.insertMany([
     {
         make: "Adidas",
         model: "Gazelle",
-        image: "",
+        image: nike,
         stockLevel: "5",
         gender: "unisex",
         price: 70.99,

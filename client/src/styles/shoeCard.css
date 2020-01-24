@@ -1,0 +1,19 @@
+.card {
+    padding: 0px;
+    color: black;
+}
+
+.card:hover {
+    color: goldenrod;
+    
+}
+
+.carddiv {
+    text-align: center;
+}
+
+.cardbutton {
+    margin: auto;
+    max-width: 50px;
+    text-align: center;
+}
