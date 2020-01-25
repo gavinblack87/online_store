@@ -4,7 +4,8 @@ import '../../styles/navBarStyles.css';
 import Logo from '../../images/gs_logo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { nike } from '../../images/adidaas.jpg'
+import adidas from '../../images/adidas.jpg';
+import dr from '../../images/dr.jpg';
 
 const NavBar = (props) => {
 
@@ -49,8 +50,7 @@ return (
 
     <Nav>
     
-
-
+    
     <NavDropdown title=<FontAwesomeIcon icon={faShoppingCart}/> alignRight>
     
       <div className="container">
@@ -58,29 +58,39 @@ return (
           <div className="shopping-cart-header">
             <FontAwesomeIcon icon={faShoppingCart} /><span className="badge">items:2</span>
             
-            <ul className="shopping-cart-items">
+            <div className="shopping-cart-items">
               <NavDropdown.Item>
-                <li className="clearfix">
-                  <span className="item-name">Nike air</span><br/>
-                  <span className="item-size">size: UK 10.5</span><br/>
-                  <span className="item-price">£10.99</span><br/>
-                  <span className="item-quantity">Quantity: 01</span>
-                </li>
+                <div className="clearfix">
+                <img className="cart-image" src={adidas} alt="nike"></img>
+                <div>
+                  <span className="item-name" alignRight>Adidas</span><br/>
+                  <span className="item-model" alignRight>Superstar</span><br/>
+                  <span className="item-size" alignRight>size: UK 7</span><br/>
+                  <span className="item-quantity">Quantity: 01</span><br/>
+                  <span className="item-price">£70.00</span><br/> 
+                  </div>
+                </div>
               </NavDropdown.Item>
+              <hr/>
               <NavDropdown.Item>
-                <li className="clearfix">
-                  <span className="item-name">Adidas Gazelle</span><br/>
-                  <span className="item-size">size: UK 9</span><br/>
-                  <span className="item-price">£70.99</span><br/>
-                  <span className="item-quantity">Quantity: 01</span>
-                </li>
+              <div className="clearfix">
+                <img className="cart-image" src={dr} alt="nike"></img>
+                <div>
+                  <span className="item-name" alignRight>Dr Martins</span><br/>
+                  <span className="item-model" alignRight>Combs Tech</span><br/>
+                  <span className="item-size" alignRight>size: UK 10.5</span><br/>
+                  <span className="item-quantity">Quantity: 01</span><br/>
+                  <span className="item-price">£101.99</span><br/>
+                  </div>
+                </div>
               </NavDropdown.Item>
-            </ul>
+              <hr/>
+            </div>
           </div> 
         </div>
         <div className="shopping-cart-total">
                 <span className="lighter-text">Total:</span>
-                <span className="main-color-text">£81.98</span>
+                <span className="main-color-text">£171.99</span>
               </div>
         <div className="checkout-button">
                     <a class="checkout" href="/" >Checkout</a>

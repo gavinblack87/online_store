@@ -105,3 +105,23 @@ li {
 .under {
     display: inline;;
 }
+
+.rating-star {
+    font-size: small;
+}
+
+.more-info {
+    display: inline-flex;
+}
+
+.info {
+    margin-left: 25%;
+}
+
+.infoHead {
+    text-decoration: underline;
+}
+
+.infoDet {
+    font-size: smaller;
+}

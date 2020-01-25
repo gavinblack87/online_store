@@ -5,7 +5,7 @@ import smallImage2 from '../../images/adidas_small3.jpg'
 import smallImage3 from '../../images/adidaas.jpg'
 import '../../styles/shoepage.css'
 
-const ShoePage = (props) => {
+const ShoePage = () => {
     return (
         <div className="container">
             <div className="shoeContainer">
@@ -31,6 +31,7 @@ const ShoePage = (props) => {
                     <h3>Adidas</h3>
                     <h5>Superstar</h5>
                     <h5>£70.99</h5>
+                    <span className="rating-star">Rating: &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50; (28)</span>
                 <div className="select">
                     <select className="sizes" name="size">
                         <option value="0">Select a Size:</option>
@@ -54,9 +55,18 @@ const ShoePage = (props) => {
             </div>
                     
         </div>
+        <hr/>
+        <div className="more-info">
             <div className="desc" >
                 <h7 className="details" >Details</h7>
                 <p className="dets" >The only way adidas can make their fan-favourite Gazelle even more iconic, is to deliver it in a slick triple black colourway. This versatile trainer is ready to take on your everyday with a premium suede upper and authentic 3-Stripe and tongue branding.</p>
+            </div>
+            <div className="info">
+                <h7 className="infoHead">Info</h7><br/>
+                    <span className="infoDet"><strong>Colours:</strong> White, Black, Gold</span><br/>
+                    <span className="infoDet"><strong>Material:</strong> Leather</span><br/>
+                    <span className="infoDet"><strong>Lining:</strong> Fabric</span>
+            </div>
             </div>
     </div>
            

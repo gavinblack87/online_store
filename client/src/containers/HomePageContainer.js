@@ -6,6 +6,7 @@ import Search from '../components/search/Search';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import RollingImage from '../components/Carousel/Carousel';
 import shoes from '../data/data.json'
+import Footer from '../components/navigation/Footer'
 
 
 class HomePageContainer extends Component {
@@ -14,6 +15,7 @@ class HomePageContainer extends Component {
         this.state = {
             shoes: shoes
         }
+        this.renderMain = this.renderMain.bind(this);
     }
 
 
@@ -28,6 +30,14 @@ class HomePageContainer extends Component {
 //         .catch(err => console.error);
 //     }
 
+renderMain(props) {
+    return (
+        <>
+        <RollingImage/>
+        </>
+    )
+}
+
 
     render(){
         return(
@@ -38,9 +48,9 @@ class HomePageContainer extends Component {
                     <Route exact path="/mens" component={Mens}/>
                     <Route exact path="/mens/nike" component={Shoe}/>
                     <Route exact path="/kids" component={Mens}/>
-                    <Route exact path="/"/>
+                    <Route exact path="/" render={this.renderMain}/>
+                    <Footer/>
                     
-                    <RollingImage/>
                 </React.Fragment>
             </Router>
         )

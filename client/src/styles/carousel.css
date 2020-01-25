@@ -2,12 +2,20 @@
     font-family: sans-serif;
     color: black;
     font-weight: bold;
-    font-size: 400px;
+    font-size: 300px;
 }
 
 .running_carousel2 {
     font-family: sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 400px;
+    font-size: 300px;
+}
+
+.running_carousel3 {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 200px;
+    padding-bottom: 50px;
 }

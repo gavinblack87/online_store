@@ -16,7 +16,11 @@ const RollingImage = (props) => (
       src={roll2}
       alt="Third slide"
     />
+    <Carousel.Caption>
+  <h3 className="running_carousel3">Fashion</h3>
+  </Carousel.Caption>
   </Carousel.Item>
+  
   <Carousel.Item>
     <img
       width="100%"

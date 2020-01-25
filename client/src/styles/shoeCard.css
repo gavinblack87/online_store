@@ -2,6 +2,9 @@
     padding: 0px;
     color: black;
 }
+.card-img {
+    width: 200px;
+}
 
 .card:hover {
     color: goldenrod;
