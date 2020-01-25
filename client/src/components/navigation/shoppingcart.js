@@ -12,7 +12,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
   <div className="container">
 
     <ul className="right">
-      <li><a href="#" id="cart"><i className="fa fa-shopping-cart"></i> Cart <span className="badge">2</span></a></li>
+      <li><a href="#" id="cart"><i icon={faShoppingCart}></i> Cart <span className="badge">2</span></a></li>
     </ul> 
   </div> 
 

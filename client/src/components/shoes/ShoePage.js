@@ -9,6 +9,7 @@ const ShoePage = (props) => {
     return (
         <div className="container">
             <div className="shoeContainer">
+                <div className="allShoes">
                 <div className="shoeThumbs">
                     <ul className="thumbList">
                         <li>
@@ -22,38 +23,42 @@ const ShoePage = (props) => {
                         </li>
                     </ul>
                 </div>
+                <div>
                     <img className="main" src={mainImage} alt="mainImage"></img>
-                    <div className="shoeInfo">
-                        <h3>Adidas</h3>
-                        <h5>Superstar</h5>
-                        <h5>£70.99</h5>
-                        <div className="select">
-                        <select className="sizes" name="size">
-                            <option value="0">Select a Size:</option>
-                            <option value="7">UK 7</option>
-                            <option value="7.5">UK 7.5</option>
-                            <option value="8">UK 8</option>
-                            <option value="8.5" disabled>UK 8.5 - out of stock</option>
-                            <option value="9">UK 9</option>
-                            <option value="9.5">UK 9.5</option>
-                            <option value="10">UK 9</option>
-                            <option value="10.5">UK 10.5</option>
-                            <option value="11" disabled>UK 11 - out of stock</option>
-                            <option value="12">UK 12</option>
-                        </select>
-                        <div>
-                            <a href="/" className="sizeguide" >Size guide</a>
-                        </div>
-                        </div>
-                        <div class="button_cont" align="left">
-                            <a class="example_c" href="/" >Add to Basket</a>
-                        </div>
-                        
-                    </div>
-                    
+                </div>
+                </div>
+                <div className="shoeInfo">
+                    <h3>Adidas</h3>
+                    <h5>Superstar</h5>
+                    <h5>£70.99</h5>
+                <div className="select">
+                    <select className="sizes" name="size">
+                        <option value="0">Select a Size:</option>
+                        <option value="7">UK 7</option>
+                        <option value="7.5">UK 7.5</option>
+                        <option value="8">UK 8</option>
+                        <option value="8.5" disabled>UK 8.5 - out of stock</option>
+                        <option value="9">UK 9</option>                         <option value="9.5">UK 9.5</option>
+                        <option value="10">UK 9</option>
+                        <option value="10.5">UK 10.5</option>
+                        <option value="11" disabled>UK 11 - out of stock</option>
+                        <option value="12">UK 12</option>
+                    </select>
+                <div>
+                    <a href="/" className="sizeguide" >Size guide</a>
+                </div>
             </div>
-            
+                <div class="button_cont" align="left">
+                    <a class="example_c" href="/" >Add to Basket</a>
+                </div>            
+            </div>
+                    
         </div>
+            <div className="desc" >
+                <h7 className="details" >Details</h7>
+                <p className="dets" >The only way adidas can make their fan-favourite Gazelle even more iconic, is to deliver it in a slick triple black colourway. This versatile trainer is ready to take on your everyday with a premium suede upper and authentic 3-Stripe and tongue branding.</p>
+            </div>
+    </div>
            
     )
 }

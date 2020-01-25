@@ -1,6 +1,8 @@
+
 .shoeContainer {
    padding: 25px;
-    display: flex;
+    display: inline-flex;
+    flex: auto;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     
 }
@@ -8,13 +10,32 @@
 li {
     padding: 0px 5px 5px 5px;
 }
-.main {
-    height: 310px;
+
+
+.allShoes {
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.shoeThumbs {
+    max-width: 200px;
+    height: auto;
+}
+
+.thumblist {
    
 }
 
 .thumbs {
-    height: 100px;
+    max-width: 100%;
+    height: 113px
+}
+
+.main {
+    width: auto;
+    height: auto;
+    display: flex;
 }
 
 .sizes {
@@ -67,3 +88,20 @@ li {
         transition: all 0.2s ease 0s;
         opacity: 90%;
         }
+
+.desc {
+    width: 30%;
+    margin-left: 7%;
+}
+
+.details {
+    text-decoration: underline;
+}
+
+.dets {
+    font-size: small;
+}
+
+.under {
+    display: inline;;
+}

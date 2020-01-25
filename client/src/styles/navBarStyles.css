@@ -29,6 +29,47 @@ a:hover {
   color: black;
 }
 
+.checkout {
+  color: goldenrod;
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 2px solid goldenrod;
+  display: inline-block;
+  transition: all 0.2s ease 0s;
+  }
+
+  .checkout:hover {
+      color: #ffffff;
+      background: goldenrod;
+      text-decoration: none;
+      border-color: goldenrod;
+      transition: all 0.2s ease 0s;
+      opacity: 90%;
+      }
+
+.checkout-button {
+  margin-left: 25%;
+}
+
+.item-quantity {
+  opacity: 50%;
+  font-size: small;
+}
+
+.item-size {
+  opacity: 50%;
+  font-size: small;
+}
+
+.shopping-cart-total {
+  margin-left: 25%;
+  padding-bottom: 10px;
+}
+
+
+
+
+
   
 
   
