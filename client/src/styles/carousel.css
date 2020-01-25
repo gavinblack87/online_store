@@ -16,6 +16,12 @@
     font-family: sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 200px;
-    padding-bottom: 50px;
+    font-size: 250px;
+    padding-bottom: 17px; 
+    text-decoration: none;
+}
+
+
+.caro-hype:hover {
+    text-decoration: none;
 }

@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
 import { Image, Container, Row, Col } from 'react-bootstrap';
 import '../../styles/banner.css'
-import men from '../../images/shopmen.jpg'
-import women from '../../images/shopwomen.jpg'
+import men from '../../images/shop-mens.jpg'
+import women from '../../images/shop-womens2.jpeg'
 
 class Banners extends Component {
     
 
     render(){
         return(
-            <Container>
-                <Row>
-                    <Col>
-                        <Image className="img" src={men} ></Image>
-                    </Col>
-                    <Col >
-                        <Image className="img2" src={women}></Image>
-                    </Col>
-                </Row>
-            </Container>
+            <div className="shop-mw">
+                <div className="mens">
+                    <a href="/mens" title="Shop Mens styles now">
+                        <h5 className="mens-boots">Shop Men's Boots</h5>
+                        <img src={men} alt="inn_logo" />
+                    </a>
+                </div>
+                <div className="womens">
+                    <a href="/mens" title="Shop Womens styles now">
+                        <h5 className="womens-boots">Shop Women's Boots</h5>
+                        <img src={women} alt="ccs_logo" /> 
+                    </a>  
+                </div>
+            </div>
+            
         )
     }
 }

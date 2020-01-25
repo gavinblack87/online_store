@@ -10,37 +10,37 @@ const RollingImage = (props) => (
 
 <Carousel controls='true' keyboard='true' interval='4000' pauseOnHover='true' slide='true'  >
 <Carousel.Item>
-    <img
+    <a href="/mens" ><img
       width="100%"
       className="d-block"
       src={roll2}
       alt="Third slide"
-    />
+    /></a>
     <Carousel.Caption>
-  <h3 className="running_carousel3">Fashion</h3>
+  <a href="/mens" className="caro-hype"><h3 className="running_carousel3">Style</h3></a>
   </Carousel.Caption>
   </Carousel.Item>
   
   <Carousel.Item>
-    <img
+  <a href="/mens" ><img
       width="100%"
       className="d-block"
       src={roll3}
       alt="First slide"
-    />
+    /></a>
     <Carousel.Caption>
-      <h3 className="running_carousel1">Run</h3>
+    <a href="/mens" className="caro-hype"><h3 className="running_carousel1">Run</h3></a>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+  <a href="/mens" ><img
       width="100%"
       className="d-block"
       src={roll1}
       alt="Second slide"
-    />
+    /></a>
     <Carousel.Caption>
-      <h3 className="running_carousel2">Walk</h3>
+    <a href="/mens" className="caro-hype"><h3 className="running_carousel2">Walk</h3></a>
     </Carousel.Caption>
   </Carousel.Item>
   

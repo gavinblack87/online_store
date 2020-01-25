@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import RollingImage from '../components/Carousel/Carousel';
 import Footer from '../components/navigation/Footer'
 import MensShoesContainer from './MensShoesContainer';
+import Banner from '../components/banners/banners'
 
 
 class HomePageContainer extends Component {
@@ -35,6 +36,8 @@ renderMain(props) {
     return (
         <>
         <RollingImage/>
+        <hr width="50%" padding-top="50%"/>
+        <Banner/>
         </>
     )
 }

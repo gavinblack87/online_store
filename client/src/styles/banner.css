@@ -1,19 +1,49 @@
-.row {
-    width: auto;
+.shop-mw {
+    display: flex;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
 
-.img {
-    width: 120%; 
-    height: 100%; 
-    object-fit: contain; 
+.shop-mw img {
+    display: inline-block;
+max-width: 100%;
 }
 
-.img2 {
-    width: 120%; 
-    height: 100%; 
-    object-fit: contain; 
+.mens {
+    padding-left: 5%;
+    max-width: 50%;
+    padding-right: 2px;
 }
 
-.col {
-  
+.womens {
+    padding-right: 5%;
+    max-width: 50%;
+    padding-left: 2px;
 }
+
+.mens-boots {
+    text-decoration: underline;
+    text-align: center;
+}
+.womens-boots {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.womens a{
+    color: black;
+}
+.womens a:hover {
+    color: goldenrod;
+}
+
+.mens a{
+    color: black;
+}
+.mens a:hover {
+    color: goldenrod;
+}
+
+
+

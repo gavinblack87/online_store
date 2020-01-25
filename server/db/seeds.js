@@ -5,9 +5,9 @@ db.dropDatabase();
 
 db.shoes.insertMany([{
     "id": 1,
-    "make": "Nike",
-    "model": "Air",
-    "logo_location": "images/nike_max.jpg",
+    "make": "Adidas",
+    "model": "Superstar",
+    "logo_location": "images/superstar.jpg",
     "stockLevel": "10",
     "gender": "Mens",
     "price": 10.99,
@@ -84,7 +84,7 @@ db.shoes.insertMany([{
 {
     "id": 7,
     "make": "Dr Martins",
-    "model": "black",
+    "model": "Black",
     "logo_location": "images/dr.jpg",
     "stockLevel": "5",
     "gender": "unisex",
@@ -110,7 +110,7 @@ db.shoes.insertMany([{
 {
     "id": 9,
     "make": "Lacoste",
-    "model": "wshite",
+    "model": "Flat",
     "logo_location": "images/lacoste.jpg",
     "stockLevel": "5",
     "gender": "unisex",

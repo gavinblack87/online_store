@@ -46,7 +46,7 @@ const ShoePage = () => {
                         <option value="12">UK 12</option>
                     </select>
                 <div>
-                    <a href="/" className="sizeguide" >Size guide</a>
+                    <a href="#" className="sizeguide" >Size guide</a>
                 </div>
             </div>
                 <div class="button_cont" align="left">
