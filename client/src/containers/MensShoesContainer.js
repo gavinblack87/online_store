@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Shoes from '../components/shoes/Shoes';
-import shoes from '../data/data.json'
+
 import ShoeFilter from '../components/shoes/ShoeFilter'
 import {BrowserRouter as Router} from 'react-router-dom';
 import InfoNav from '../components/navigation/InfoNav';
@@ -8,9 +8,7 @@ import InfoNav from '../components/navigation/InfoNav';
 class MensShoesContainer extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            shoes: shoes
-        }
+        
     }
 
 
@@ -20,7 +18,7 @@ class MensShoesContainer extends Component {
                 <React.Fragment>
                     <InfoNav />
                     <ShoeFilter />
-                    <Shoes shoes={shoes} />
+                    <Shoes shoes={this.props.shoes} />
                 </React.Fragment>
             </Router>
         )

@@ -5,30 +5,31 @@ import NavBar from '../components/navigation/NavBar';
 import Search from '../components/search/Search';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import RollingImage from '../components/Carousel/Carousel';
-import shoes from '../data/data.json'
 import Footer from '../components/navigation/Footer'
+import MensShoesContainer from './MensShoesContainer';
 
 
 class HomePageContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            shoes: shoes
+            shoes: []
         }
         this.renderMain = this.renderMain.bind(this);
+        this.renderMens = this.renderMens.bind(this);
     }
 
 
 
-// componentDidMount() {
-//     const url = 'http://localhost:8080/api/shoes';
-//     fetch(url)
-//         .then(res => res.json())
-//         .then(shoes => this.setState({
-//             shoes: shoes
-//         }))
-//         .catch(err => console.error);
-//     }
+componentDidMount() {
+    const url = 'http://localhost:8080/api/shoes';
+    fetch(url)
+        .then(res => res.json())
+        .then(shoes => this.setState({
+            shoes: shoes
+        }))
+        .catch(err => console.error);
+    }
 
 renderMain(props) {
     return (
@@ -38,6 +39,13 @@ renderMain(props) {
     )
 }
 
+renderMens(props) {
+    return (
+        <>
+        <MensShoesContainer shoes={this.state.shoes}/>
+        </>
+    )
+}
 
     render(){
         return(
@@ -45,7 +53,7 @@ renderMain(props) {
                 <React.Fragment>
                     
                     <NavBar />
-                    <Route exact path="/mens" component={Mens}/>
+                    <Route exact path="/mens" render={this.renderMens}/>
                     <Route exact path="/mens/nike" component={Shoe}/>
                     <Route exact path="/kids" component={Mens}/>
                     <Route exact path="/" render={this.renderMain}/>

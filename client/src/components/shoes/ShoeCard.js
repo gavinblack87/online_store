@@ -1,21 +1,20 @@
 import React from 'react'
 import { Card, Badge } from 'react-bootstrap';
-import nike from '../../images/adidas.jpg'
 import '../../styles/shoeCard.css'
 import Shoe from '../../containers/ShoeContainer'
 
 
 
-const ShoeCard = (props) => {
+const ShoeCard = ({shoe}) => {
     return(
         <a href="/mens/nike" component={Shoe}>
         <Card className="h-100 shadow-sm bg-white rounded">
-            <Card.Img variant="top" src={require('../../'+props.data.logo_location)} />
+            <Card.Img variant="top" src={require('../../'+shoe.logo_location)} />
             <div className="carddiv" >
-                    <Card.Title className="mb-0 font-weight-bold">{props.data.make}</Card.Title>
-                    <Card.Text className="mb-0">{props.data.model}</Card.Text>
+                    <Card.Title className="mb-0 font-weight-bold">{shoe.make}</Card.Title>
+                    <Card.Text className="mb-0">{shoe.model}</Card.Text>
                     <Badge pill className="mb-1" variant="warning">
-                        £{props.data.price}
+                        £{shoe.price}
                     </Badge> 
                 </div>
             

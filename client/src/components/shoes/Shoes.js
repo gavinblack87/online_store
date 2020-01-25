@@ -7,6 +7,9 @@ import  ShoeCard  from './ShoeCard';
 
 
 class Shoes extends Component {
+    constructor(props) {
+        super(props);
+    }
     
     render(){
         return (
@@ -14,7 +17,7 @@ class Shoes extends Component {
                 <Row>
                     {this.props.shoes.map(data => (
                         <Col className="mb-5" key={`${data.id}`}>
-                            <ShoeCard data={data} />
+                            <ShoeCard shoe={data} />
                         </Col>
                     ))}
                 </Row>
