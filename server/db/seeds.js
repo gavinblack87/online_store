@@ -83,7 +83,7 @@ db.shoes.insertMany([{
 },
 {
     "id": 7,
-    "make": "Dr Martins",
+    "make": "Dr Martens",
     "model": "Black",
     "logo_location": "images/dr.jpg",
     "stockLevel": "5",
@@ -96,7 +96,7 @@ db.shoes.insertMany([{
 },
 {
     "id": 8,
-    "make": "Dr Martins",
+    "make": "Dr Martens",
     "model": "Tartan",
     "logo_location": "images/dr2.jpg",
     "stockLevel": "5",

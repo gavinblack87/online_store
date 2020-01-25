@@ -2,8 +2,29 @@
 .navbar {
     font-weight: bold;
     border-bottom: 2px solid #CBB26A;
+    vertical-align: middle;
   }
 
+.brand-title {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.mr-auto {
+  vertical-align: middle;
+}
+
+.golden-p{
+  margin-bottom: 0rem;
+}
+
+.golden-shoe {
+  color: goldenrod;
+}
+.golden-shoe:hover {
+  color: goldenrod;
+  text-decoration: none;
+}
 
 
 .search {

@@ -31,7 +31,8 @@ const ShoePage = () => {
                     <h3>Adidas</h3>
                     <h5>Superstar</h5>
                     <h5>£70.99</h5>
-                    <span className="rating-star">Rating: &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50; (28)</span>
+                    <span className="rating-star">Rating: &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50; (28)</span><br/>
+                    <span className="rating-star">Size rating: Good fit</span>
                 <div className="select">
                     <select className="sizes" name="size">
                         <option value="0">Select a Size:</option>

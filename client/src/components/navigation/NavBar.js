@@ -8,6 +8,7 @@ import adidas from '../../images/adidas.jpg';
 import dr from '../../images/dr.jpg';
 
 const NavBar = (props) => {
+  const cart = <FontAwesomeIcon icon={faShoppingCart}/>
 
 return (
 <Navbar sticky="top">
@@ -15,31 +16,36 @@ return (
   <Navbar.Toggle aria-controls="basic-navbar-nav"/>
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
+    <Navbar.Brand className="brand-title">
+        <a href="/" title="Golden Shoe" className="golden-shoe">
+          <p className="golden-p">Golden Shoe</p>
+        </a>
+      </Navbar.Brand>
       <Navbar.Brand>
-        <a href="/">
+        <a href="/" title="Golden Shoe">
           <img src={Logo} style={{width:50, marginTop: -7, marginBottom: -7}}  />
         </a>
       </Navbar.Brand>
-      <NavDropdown title="Mens" id="mens-nav-dropdown" activeclassname="current">
+      <NavDropdown title="Men" id="mens-nav-dropdown" activeclassname="current">
         <NavDropdown.Item href="/mens">Shoes</NavDropdown.Item>
         <NavDropdown.Item href="/mens">Trainers</NavDropdown.Item>
         <NavDropdown.Item href="/mens">Boots</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">Sale Items</NavDropdown.Item>
       </NavDropdown>
-      <NavDropdown title="Womens" id="womens-nav-dropdown">
+      <NavDropdown title="Women" id="womens-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Shoes</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Trainers</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Boots</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">Sale Items</NavDropdown.Item>
       </NavDropdown>
       <NavDropdown title="Kids" id="kids-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Shoes</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Trainers</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Boots</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">Sale Items</NavDropdown.Item>
       </NavDropdown>
       <Form className="search" alignRight>
         <FormControl type="text" placeholder="Search"/>
@@ -47,16 +53,13 @@ return (
     </Nav>
     </Navbar.Collapse>
 
-
     <Nav>
-    
-    
-    <NavDropdown title=<FontAwesomeIcon icon={faShoppingCart}/> alignRight>
+    <NavDropdown title={cart} alignRight>
     
       <div className="container">
         <div className="shopping-cart">
           <div className="shopping-cart-header">
-            <FontAwesomeIcon icon={faShoppingCart} /><span className="badge">items:2</span>
+            {cart}<span className="badge">items: 2</span>
             
             <div className="shopping-cart-items">
               <NavDropdown.Item>
@@ -93,7 +96,7 @@ return (
                 <span className="main-color-text">£171.99</span>
               </div>
         <div className="checkout-button">
-                    <a class="checkout" href="/" >Checkout</a>
+                    <a class="checkout" href="#" >Checkout</a>
                 </div>   
       </div>
     </NavDropdown>
