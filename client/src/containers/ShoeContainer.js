@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import ShoePage from '../components/shoes/ShoePage';
-import shoes from '../data/data.json'
+
 import {BrowserRouter as Router} from 'react-router-dom';
 import InfoNav from '../components/navigation/InfoNav';
 
 class ShoeContainer extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            shoes: shoes
-        }
+       
     }
 
 
@@ -18,7 +16,7 @@ class ShoeContainer extends Component {
             <Router>
                 <React.Fragment>
                     <InfoNav />
-                    <ShoePage shoes={shoes}/>
+                    <ShoePage />
                 </React.Fragment>
             </Router>
         )

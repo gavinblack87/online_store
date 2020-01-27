@@ -1,9 +1,8 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import '../../styles/ShoeListItem.css'
 import '../../styles/tables.css';
 import '../../styles/buttons.css';
-import Nike from '../../images/adidas_gazelle.jpg'
 
 const ContactListItem = ({shoe}) => {
 

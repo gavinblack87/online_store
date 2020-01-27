@@ -8,6 +8,7 @@ import RollingImage from '../components/Carousel/Carousel';
 import Footer from '../components/navigation/Footer'
 import MensShoesContainer from './MensShoesContainer';
 import Banner from '../components/banners/banners'
+import ShoeContainer from './ShoeContainer';
 
 
 class HomePageContainer extends Component {
@@ -49,6 +50,8 @@ renderMens(props) {
         </>
     )
 }
+
+
 
     render(){
         return(
