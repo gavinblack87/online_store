@@ -69,5 +69,5 @@ renderMens(props) {
             </Router>
         )
     }
-}
+};
 export default HomePageContainer;
